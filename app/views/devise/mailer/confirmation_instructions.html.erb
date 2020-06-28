@@ -1,0 +1,5 @@
+<p><%= @email %>さん、Profyへようこそ!</p>
+
+<p>この下のリンクをクリックして登録を完了させてください:</p>
+
+<p><%= link_to 'こちらをクリック', confirmation_url(@resource, confirmation_token: @token) %></p>
